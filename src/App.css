@@ -92,7 +92,7 @@ display: flex;
   align-items: center;
   margin: 4px auto;
   color: black;
-  background-color:#D9D9D9;
+  background-color:#d9d9d9db;
 
   padding: 16px;
   border-radius: 5px;
@@ -110,7 +110,7 @@ justify-content: space-between;
 align-items: center;
 margin: 4px auto;
 color: #fff;
-background-color: greenyellow;
+background-color: rgb(126, 197, 20);
 
 padding: 16px;
 border-radius: 5px;
