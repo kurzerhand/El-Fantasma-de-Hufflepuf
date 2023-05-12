@@ -31,17 +31,12 @@ if (edit.id) {
   return todos.map((todo, index) => (
     <>
 
-<div className="nueva">
-<label>
-        <input className="textoNuevo" type="checkbox" checked={favorito.id} onChange={handleToggleFavorito} />
-        {favorito ? <TiStarFullOutline size={24} /> : <TiStarOutline size={24} />}
-      </label>
-        </div>
+
       <div
         className={todo.isComplete ? "todo-complete" : "todo-container"}
         key={index}
       >
-        
+         
         <div>
           
           <input
