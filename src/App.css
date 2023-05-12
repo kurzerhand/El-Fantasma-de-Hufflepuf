@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -36,3 +37,167 @@
     transform: rotate(360deg);
   }
 }
+=======
+*{
+  cursor: url(./cursores/use160.cur) ,pointer;
+}
+
+/*css for app.jsx */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Henny+Penny&family=Roboto+Mono:wght@100&display=swap');
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 500px;
+    background-color: #AB8928;
+    /* background-repeat: no-repeat; */
+    text-align: center;
+    margin: 90px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+    
+    
+
+}
+h1{
+color: rgb(82, 42, 4);
+/* font-family: 'Bebas Neue', sans-serif; */
+/* font-family: 'Roboto Mono', monospace; */
+font-family: 'Henny Penny', cursive;
+
+
+}
+
+/* css for Todo.jsx */
+.header{
+  margin: 32px 0;
+  font-size: 34px;
+}
+
+/* css for TodoForm.jsx */
+.todo_form{
+    margin-bottom: 32px;
+}
+
+.input-add{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #422105;
+    width: 320px;
+    background: transparent;
+    color:black;    
+    font-weight: bold;
+
+  
+}
+input::placeholder {color: white}
+
+.input-edit{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #5d0cff;
+    box-shadow: 10px 5px 5px rgb(139, 123, 169);
+    width: 320px;
+    background: transparent;
+    color:black;
+    
+}
+
+.edit-button,
+.add-button{
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  background-color:transparent;
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: url(./cursores/use160.cur) ,pointer;
+
+}
+.icono{
+  margin-top: -25px;
+  position: absolute;
+}
+
+/* css for TodoList.jsx */
+.todo-container{
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: black;
+  background-color:#d9d9d9db;
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 380px;
+  font-size: 20px;
+  background-image: url(./medios/Voldemort-Alive.png);
+background-size: 50%;
+background-repeat: no-repeat;
+background-position: -70px;
+}
+
+.todo-complete{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 4px auto;
+color: #fff;
+background-color: rgb(126, 197, 20);
+
+padding: 16px;
+border-radius: 5px;
+width: 380px;
+color: #000;
+font-size: 20px;
+background-image: url(./medios/Voldemort-Death.png);
+background-size: 50%;
+background-repeat: no-repeat;
+background-position: -70px;
+
+}
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    margin-right: 5px;
+    color: rgb(212, 20, 20);
+
+   
+}
+  
+.edit-icon {
+   color: rgb(121, 77, 15);
+
+}
+
+.cuadradoCheck{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  z-index: -1;
+  opacity: 0;
+ 
+
+}
+.nueva{
+  margin-left: -460px;
+  
+  
+}
+.textoNuevo{
+  margin-bottom:-50px;
+  margin-top: 10px;
+}
+>>>>>>> master
