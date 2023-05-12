@@ -4,39 +4,48 @@ import { MdOutlineEdit, MdDelete } from "react-icons/md";
 
 import {TiStarOutline, TiStarFullOutline} from 'react-icons/ti'
 
-function TodoList({ todos, updateTodo, removeTodo, completeTodo }) {
+function TodoList({ todos, updateTodo, removeTodo, completeTodo, createdAt, createdAtTime, nuevaAt }) {
   const [edit, setEdit] = useState({
     id: null,
     value: "",
+    
   });
 
-  const submitUpdate = (value) => {
-    updateTodo(edit.id, value);
+  const todosWithTime = todos.map((todo) => ({
+    ...todo,
+    createdAt: new Date().toLocaleString(),
+    
+      
+  }));
+
+  const submitUpdate = (value,) => {
+    updateTodo(edit.id, value, createdAt);
     setEdit({
       id: null,
       value: "",
+      
     });
   };
 
-  const [favorito, setFavorito] = useState(false)
+  // const [favorito, setFavorito] = useState(false)
 
-  const handleToggleFavorito = (id) => {
-    setFavorito(!favorito)
-  }
+  // const handleToggleFavorito = (id) => {
+  //   setFavorito(!favorito)
+  // }
 
 if (edit.id) {
- return <TodoForm edit={edit} onSubmit={submitUpdate} />;
+ return <TodoForm edit={edit} onSubmit={submitUpdate}/>;
 }
 
-  return todos.map((todo, index) => (
+  return todosWithTime.map((todo, index,createdAt) => (
     <>
 
-<div className="nueva">
+{/* <div className="nueva">
 <label>
         <input className="textoNuevo" type="checkbox" checked={favorito.id} onChange={handleToggleFavorito} />
         {favorito ? <TiStarFullOutline size={24} /> : <TiStarOutline size={24} />}
       </label>
-        </div>
+        </div> */}
       <div
         className={todo.isComplete ? "todo-complete" : "todo-container"}
         key={index}
@@ -56,7 +65,7 @@ if (edit.id) {
           >
 
             
-            {todo.text}
+            {todo.text} 
           </span>
         </div>
         
