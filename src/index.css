@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
+=======
+  background-image: url('https://wallpaperaccess.com/full/112831.jpg');
+  background-size: contain;
+>>>>>>> master
 }
 
 code {
